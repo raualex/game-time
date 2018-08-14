@@ -1,3 +1,5 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/raualex/game-time.svg?columns=all)](https://waffle.io/raualex/game-time)
+
 # Game Time Starter Kit (FE - Module 2)
 
 Basic Game Time starter kit.
