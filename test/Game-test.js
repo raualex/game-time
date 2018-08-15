@@ -11,18 +11,28 @@ const ctx = {
 
 describe('Game', () => {
 
-  it('should end game if block collides with wall', () => {
+  it('should end game if snake collides with wall', () => {
     const game = new Game(ctx);
-    const block = game.blocks[0];
+    const snake = game.snake;
 
-    block.x = ctx.canvas.width;
+    snake.x = ctx.canvas.width;
 
-    game.handleBlock(block);
+    game.handleSnake(snake);
 
     assert.isTrue(game.gameOver);
   });
 
-  it.skip('should take properties', () => {})
+  it.skip('should detect if snake collides with food', () => {
+    const snake = game.snake;
+    const food = game.food;
+    
+    snake.x = food.x;
+
+    let colliding = snake.isCollidingWith(food)
+
+    assert.equal(colliding, true)
+
+  })
   it.skip('should end game', () => {})
   it.skip('should collide with walls', () => {})
   it.skip('should be able to move', () => {})
