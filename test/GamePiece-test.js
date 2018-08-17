@@ -38,7 +38,7 @@ describe('GamePiece', () => {
     assert.equal(notColliding, false);
   });
 
-  it.skip('should collide with walls', () => {})
-  it.skip('should be able to move', () => {})
-  it.skip('should be able to changeDirection', () => {})
+  it.skip('should be able to changeDirection', () => {
+    
+  })
 })
