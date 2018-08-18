@@ -26,8 +26,16 @@ footer {
   justify-content: center;
 }
 
+.canvas-background {
+  background-color: #a4c23d;
+  position: absolute;
+}
+
+.canvas-container {
+  position: relative;
+}
+
 #game {
-  /*background-color: #a4c23d*/
   border: 1px dashed;
   margin: auto;
   display: block;
