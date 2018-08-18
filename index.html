@@ -4,9 +4,31 @@
   <meta charset="utf-8">
   <title>Game Time</title>
   <link href='./game.css' rel='stylesheet' type='text/css'/>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <body>
-  <canvas id="game" width="500" height="500"></canvas>
+  <header>Snake</header>
+  <main>
+    <div class="score-container">
+      <h1>Score</h1>
+      <p class="score">0</p>
+    </div>
+    <div class="canvas-container">
+      <div class="canvas-background"></div>
+      <canvas id="game" width="500" height="500"></canvas>
+    </div>
+    <div class="lives-container">
+      <h1>Lives</h1>
+      <p class="lives">5</p>
+    </div>
+  </main>
+  <footer>
+    <h1>Controls</h1>
+    <p>Start: Enter
+      <br>Pause: Spacebar
+      <br>Use arrow keys to change direction
+    </p>
+  </footer>
   <script src="main.bundle.js"></script>
 </body>
 </html>
