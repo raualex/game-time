@@ -1,9 +1,8 @@
 body {
-  display: grid;
+  font-family: 'VT323', monospace;
 }
 
 header {
-  grid-column: span 3;
   text-align: center;
   font-size: 5em;
 }
@@ -23,12 +22,12 @@ p {
 }
 
 footer {
-  grid-column: span 3;
   display: grid;
   justify-content: center;
 }
 
 #game {
+  /*background-color: #a4c23d*/
   border: 1px dashed;
   margin: auto;
   display: block;
