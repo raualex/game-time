@@ -14,27 +14,52 @@ describe('Game', () => {
   it('should end game if snake collides with wall', () => {
     const game = new Game(ctx);
     const snake = game.snake;
+    const snakeHead = snake.snakeBlocks[0]
 
-    snake.x = ctx.canvas.width;
+    snakeHead[0] = ctx.canvas.width;
 
     game.handleSnake(snake);
 
     assert.isTrue(game.gameOver);
   });
 
-  it.skip('should detect if snake collides with food', () => {
+  it('should detect if snake collides with food', () => {
+    const game = new Game(ctx);
     const snake = game.snake;
     const food = game.food;
-    
-    snake.x = food.x;
+    const snakeHead = snake.snakeBlocks[0];
 
-    let colliding = snake.isCollidingWith(food)
+    snakeHead[0] = food.x;
+    snakeHead[1] = food.y;
 
-    assert.equal(colliding, true)
+    let colliding = snake.isCollidingWith(food);
+
+    assert.equal(colliding, true);
 
   })
-  it.skip('should end game', () => {})
-  it.skip('should collide with walls', () => {})
-  it.skip('should be able to move', () => {})
-  it.skip('should be able to changeDirection', () => {})
+
+  it('should be able to move', () => {
+    const game = new Game(ctx);
+    const snake = game.snake;
+    const snakeHead = snake.snakeBlocks[0];
+    
+    assert.deepEqual(snake.snakeBlocks[0], [200, 50])
+    snake.move();
+    assert.deepEqual(snake.snakeBlocks[0], [240, 50])   
+  })
+
+  it.skip('should be able to changeDirection', () => {
+    const game = new Game(ctx);
+    const snake = game.snake;
+    const fakeKeyPress = { key: 'ArrowLeft' };
+
+    game.handleKeyPress(fakeKeyPress);
+    assert.equal(snake.dx, -1);
+  })
+
 });
+
+
+
+
+
