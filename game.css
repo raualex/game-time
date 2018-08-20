@@ -28,17 +28,18 @@ footer {
 
 .canvas-background {
   background-color: #a4c23d;
-  position: absolute;
-}
-
-.canvas-container {
+  height: 500px;
+  left: 12.9%;
   position: relative;
+  width: 500px;
 }
 
 #game {
+  position: absolute;
   border: 1px dashed;
-  margin: auto;
   display: block;
+  left: 33%;
+  margin: auto;
 }
 
 .lives {
