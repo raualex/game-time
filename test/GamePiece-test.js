@@ -38,7 +38,4 @@ describe('GamePiece', () => {
     assert.equal(notColliding, false);
   });
 
-  it.skip('should be able to changeDirection', () => {
-    
-  })
 })
