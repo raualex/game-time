@@ -1,16 +1,22 @@
 body {
+  background-color: #2b425d;
   font-family: 'VT323', monospace;
+  margin: 0;
 }
 
 header {
-  text-align: center;
   font-size: 5em;
+  margin-bottom: 40px;
+  margin-left: 41.5%;
+  margin-top: 40px;
+  text-align: center;
+  width: 250px;
 }
 
 main {
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr
+  grid-template-columns: 1fr 2fr 1fr
 }
 
 h1 {
@@ -27,14 +33,25 @@ p {
 footer {
   display: grid;
   justify-content: center;
+  left: 31.7%;
+  margin-bottom: 300px;
+  margin-top: 40px;
+  position: absolute;
+  width: 537px;
 }
 
 .canvas-background {
   background-color: #a4c23d;
-  height: 500px;
-  left: 12.9%;
+  border: 5px solid black;
+  height: 496px;
+  left: 7.75%;
   position: relative;
   width: 500px;
+}
+
+.container {
+  background-color: #d4e4eb;
+  border: 5px solid black;
 }
 
 #game {
@@ -42,7 +59,6 @@ footer {
   border: 1px dashed;
   display: block;
   left: 33%;
-  margin: auto;
 }
 
 .lives-container {
@@ -50,11 +66,19 @@ footer {
   justify-content: center;
 }
 
-.score {
-
+.lives-container,
+.score-container {
+  border-radius: 30%;
+  margin: auto;
+  width: 160px;
 }
 
 .score-container {
   display: grid;
   justify-content: center;
 }
+
+.title-container {
+  border-radius: 15px;
+}
+
