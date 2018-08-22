@@ -38,23 +38,39 @@ describe('Game', () => {
 
   })
 
-  it('should be able to move', () => {
+  it('snake should be able to move', () => {
     const game = new Game(ctx);
     const snake = game.snake;
     const snakeHead = snake.snakeBlocks[0];
     
-    assert.deepEqual(snake.snakeBlocks[0], [200, 50])
-    snake.move();
-    assert.deepEqual(snake.snakeBlocks[0], [240, 50])   
+    assert.deepEqual(snake.snakeBlocks[0], [200, 40])
+    snake.move('right');
+    assert.deepEqual(snake.snakeBlocks[0], [220, 40])   
   })
 
-  it.skip('should be able to changeDirection', () => {
+  it('snake should be able to changeDirection', () => {
     const game = new Game(ctx);
     const snake = game.snake;
-    const fakeKeyPress = { key: 'ArrowLeft' };
+    
+    snake.move('right');
+    snake.move('right');
+    snake.move('right');
+    assert.deepEqual(snake.snakeBlocks[0], [260, 40]);
+    snake.move('up');
+    assert.deepEqual(snake.snakeBlocks[0], [260, 20]);
+  })
+  
+  it.skip('food should appear in random spots on the gameboard', () => {
+    const game = new Game(ctx);
+    const snake = game.snake;
+    const food = game.food;
+    const foodX = food.x;
+    const foodY = food.y;
 
-    game.handleKeyPress(fakeKeyPress);
-    assert.equal(snake.dx, -1);
+    game.reproduceFood(food)
+    assert.notEqual(foodX, food.x)
+    assert.notEqual(foodY, food.y)
+
   })
 
 });
