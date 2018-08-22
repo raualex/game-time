@@ -19,23 +19,7 @@ describe('GamePiece', () => {
       height: 10,
       width: 10,
       color: 'green',
-      dx: 1,
-      dy: 0,
-      dxv: .1,
-      dyv: .1
     });
-  });
-
-  it('should collide with a second gamepiece that occupies the same space', () => {
-    const gamePiece2 = new GamePiece(30, 30, 10, 10, 'red');
-    const gamePiece3 = new GamePiece(50, 50, 10, 10, 'green');
-    const gamePiece4 = new GamePiece(80, 80, 10, 10, 'red');
-
-    const colliding = gamePiece.isCollidingWith(gamePiece2);
-    assert.equal(colliding, true);
-
-    const notColliding = gamePiece3.isCollidingWith(gamePiece4);
-    assert.equal(notColliding, false);
   });
 
 })
