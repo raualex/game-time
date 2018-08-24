@@ -59,19 +59,6 @@ describe('Game', () => {
     snake.move('up');
     assert.deepEqual(snake.snakeBlocks[0], [260, 20]);
   })
-  
-  it.skip('food should appear in random spots on the gameboard', () => {
-    const game = new Game(ctx);
-    const snake = game.snake;
-    const food = game.food;
-    const foodX = food.x;
-    const foodY = food.y;
-
-    game.reproduceFood(food)
-    assert.notEqual(foodX, food.x)
-    assert.notEqual(foodY, food.y)
-
-  })
 
 });
 
