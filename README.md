@@ -27,3 +27,8 @@ https://github.com/ashtonkbailey
 
 ## Screenshots:
 
+![Welcome Screen](https://github.com/raualex/game-time/blob/Add-README/ScreenShots/gametimeWelcomePage.png)
+
+![Game Play Example 1](https://github.com/raualex/game-time/blob/Add-README/ScreenShots/gametimePlay1.png)
+
+![Game Play Example 2](https://github.com/raualex/game-time/blob/Add-README/ScreenShots/gametimePlay2.png)
