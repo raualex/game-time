@@ -2,7 +2,6 @@
 
 # Game Time - Snake
 
-
 ## About:
 
 This is the classic arcade game Snake, built out using the HTML Canvas.  In this game, you have 5 lives, and you have to eat as many blocks of fodd, and accumulate as many points as you can before you die.  IF you hit the wall, or yourself, you die and lose a life.  The game gets faster as you go, as well.
