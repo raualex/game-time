@@ -4,7 +4,7 @@
 
 ## About:
 
-This is the classic arcade game Snake, built out using the HTML Canvas.  In this game, you have 5 lives, and you have to eat as many blocks of fodd, and accumulate as many points as you can before you die.  IF you hit the wall, or yourself, you die and lose a life.  The game gets faster as you go, as well.
+This is a vesion of the classic arcade game Snake, built out using JavaScript and the HTML Canvas.  In this game, you have 5 lives, and you have to eat as many blocks of food (and accumulate as many points as you can - each food brick eaten equals 10 points) before you die.  If you hit the wall, or yourself, you die and lose a life.  The game gets faster every time your score increases by 50.
 
 
 ## To Start:
